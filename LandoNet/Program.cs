@@ -111,7 +111,7 @@ else if (instructions == "SecretCommands") {
         Console.ForegroundColor = ConsoleColor.White;
         Console.WriteLine("What would you like to do?");
         Console.ForegroundColor = ConsoleColor.Blue;
-        Console.WriteLine("sayHello\n close\n 9/11");
+        Console.WriteLine("sayHello\n close");
         Console.ForegroundColor = ConsoleColor.Yellow;
         Console.WriteLine("---------------------");
         Console.ForegroundColor = ConsoleColor.White;
@@ -121,9 +121,7 @@ else if (instructions == "SecretCommands") {
         if (askedCommand == "sayHello") {
             Console.WriteLine("Hello there!\n");
         }
-        if (askedCommand == "9/11") {
-            Console.WriteLine("Is funny");
-        }
+
         if (askedCommand == "close") {
 
         }
