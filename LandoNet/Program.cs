@@ -18,11 +18,14 @@ instructions = Console.ReadLine();
 if (instructions == "cmds") {
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("--------------------------------------");
-    Console.ForegroundColor = ConsoleColor.Green;
+    Console.ForegroundColor = ConsoleColor.Blue;
     for (int i = 0; i < cmds.Length; i++)
     {
         Console.WriteLine(cmds[i]);
     }
+    Console.ForegroundColor = ConsoleColor.White;
+    Console.WriteLine("Please enter the command you want to issue from the list above!\n Do NOT enter cmds again!");
+    instructions = Console.ReadLine();
 }
 
 //Calculator Command
@@ -81,6 +84,49 @@ else {
     Console.WriteLine("Try saying yes or no. I dont know what you typed!");
     Console.ReadLine();
 }
+}
+
+//LandoOnly
+
+else if (instructions == "LandoOnly") {
+    string password;
+    string askedCommand;
+
+    Console.ForegroundColor = ConsoleColor.Red;
+    Console.WriteLine("Please enter the password:");
+    Console.ForegroundColor = ConsoleColor.White;
+
+    password = Console.ReadLine();
+
+    if (password == "TheTrueLando") {
+        Console.ForegroundColor = ConsoleColor.Green;
+        Console.WriteLine("Access Granted");
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("---------------------");
+
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine("What would you like to do?");
+        Console.ForegroundColor = ConsoleColor.Blue;
+        Console.WriteLine("sayHello\n stop");
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("---------------------");
+        Console.ForegroundColor = ConsoleColor.White;
+
+        askedCommand = Console.ReadLine();
+
+        if (askedCommand == "sayHello") {
+            Console.WriteLine("Hello there!\n");
+        }
+        if (askedCommand == "stop") {
+
+        }
+    }
+    else if (password != "TheTrueLando") {
+        Console.ForegroundColor = ConsoleColor.Red;
+        Console.WriteLine("Access Denied!");
+        Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("---------------------");
+    }
 }
 
 
