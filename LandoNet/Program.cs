@@ -4,7 +4,7 @@ string skillIssue;
 string instructions;
 
 //Current Commands
-string[] cmds = {"usa", "treetrain1", "math", "SecretCommands", "DropKickANewborn"};
+string[] cmds = {"usa", "treetrain1", "math", "SecretCommands", "DropKickANewborn", "credits"};
 
 
 //Begin Operations
@@ -161,6 +161,14 @@ else if (instructions == "DropKickANewborn") {
 
     Console.WriteLine("Thats the first 20 steps on how to DropKickANewborn!");
 }
+
+//Credits Command
+
+else if (instructions == "credits") {
+    Console.WriteLine("https://www.kickababyscam.com");
+    Console.WriteLine("Thanks to them for the 20 steps!");
+}
+
 
 
 else {
