@@ -1,0 +1,15 @@
+C:\Users\Lande\Desktop\C#Testing\bin\Debug\net6.0\C#Testing.exe
+C:\Users\Lande\Desktop\C#Testing\bin\Debug\net6.0\C#Testing.deps.json
+C:\Users\Lande\Desktop\C#Testing\bin\Debug\net6.0\C#Testing.runtimeconfig.json
+C:\Users\Lande\Desktop\C#Testing\bin\Debug\net6.0\C#Testing.dll
+C:\Users\Lande\Desktop\C#Testing\bin\Debug\net6.0\ref\C#Testing.dll
+C:\Users\Lande\Desktop\C#Testing\bin\Debug\net6.0\C#Testing.pdb
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\C#Testing.csproj.AssemblyReference.cache
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\C#Testing.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\C#Testing.AssemblyInfoInputs.cache
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\C#Testing.AssemblyInfo.cs
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\C#Testing.csproj.CoreCompileInputs.cache
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\C#Testing.dll
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\ref\C#Testing.dll
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\C#Testing.pdb
+C:\Users\Lande\Desktop\C#Testing\obj\Debug\net6.0\C#Testing.genruntimeconfig.cache
