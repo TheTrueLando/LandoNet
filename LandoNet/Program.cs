@@ -4,7 +4,7 @@ string skillIssue;
 string instructions;
 
 //Current Commands
-string[] cmds = {"usa", "treetrain1", "math", "SecretCommands", "DropKickANewborn", "credits"};
+string[] cmds = {"usa", "treetrain1", "math", "SecretCommands", "DropKickANewborn", "GCF (WORK IN PROGRESS, MAY CRASH)", "credits"};
 
 
 //Begin Operations
