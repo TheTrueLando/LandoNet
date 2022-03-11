@@ -56,9 +56,29 @@ if (instructions == "math") {
 		{
             Console.ForegroundColor = ConsoleColor.Cyan;
 			Console.WriteLine("Answer: {0}",x/y);
-		}
-		   
+		}		   
 }
+
+//WIP Greatist Common Factor Command (MAY NOT FULLY WORK YET)
+
+if (instructions == "GCF") {
+	  Console.Write(" Number 1 : ");
+            int n1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write(" Number 2 : ");
+            int n2 = Convert.ToInt32(Console.ReadLine());
+            Console.WriteLine(" ======================");
+            while (n1 != n2)
+            {
+                if (n1 > n2)
+                    n1 -= n2;
+                else
+                    n2 -= n1;
+            }
+            Console.WriteLine(" G.C.D is " + n1);
+}
+
+
+
 
 //USA Command
 
