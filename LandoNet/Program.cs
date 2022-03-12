@@ -1,21 +1,21 @@
 Console.Title = "LandoNet";
 
 string skillIssue;
-string instructions;
+string command;
 
 //Current Commands
-string[] cmds = {"usa", "treetrain1", "math", "SecretCommands", "DropKickANewborn", "GCF (WORK IN PROGRESS, MAY CRASH)", "credits"};
+string[] cmds = {"usa", "treetrain1", "math", "SecretCommands", "DropKickANewborn", "GCD (Greatest Common demoinator)", "Hacker", "credits"};
 
 
 //Begin Operations
 Console.WriteLine("How can I help you? You can say cmds for a list of commands!:");
-instructions = Console.ReadLine();
+command = Console.ReadLine();
 
 
 //Begin Commands
 //cmds Command
 
-if (instructions == "cmds") {
+if (command == "cmds") {
     Console.ForegroundColor = ConsoleColor.Yellow;
     Console.WriteLine("--------------------------------------");
     Console.ForegroundColor = ConsoleColor.Blue;
@@ -25,12 +25,12 @@ if (instructions == "cmds") {
     }
     Console.ForegroundColor = ConsoleColor.White;
     Console.WriteLine("Please enter the command you want to issue from the list above!\n Do NOT enter cmds again!");
-    instructions = Console.ReadLine();
+    command = Console.ReadLine();
 }
 
 //Calculator Command
 
-if (instructions == "math") {
+if (command == "math") {
     Console.WriteLine("Type first number...");
 		long x = Convert.ToInt64(Console.ReadLine());
 		Console.WriteLine("Type...\n a for adding\n s for subtract\n m for multiply\n d for divide");
@@ -59,14 +59,16 @@ if (instructions == "math") {
 		}		   
 }
 
-//WIP Greatist Common Factor Command (MAY NOT FULLY WORK YET)
+//Greatest Common Denominator Command
 
-if (instructions == "GCF") {
-	  Console.Write(" Number 1 : ");
+if (command == "GCD") {
+	  Console.Write(" First Number For GCD: ");
             int n1 = Convert.ToInt32(Console.ReadLine());
-            Console.Write(" Number 2 : ");
+            Console.Write(" Second Number For GCD: ");
             int n2 = Convert.ToInt32(Console.ReadLine());
-            Console.WriteLine(" ======================");
+             Console.ForegroundColor = ConsoleColor.Yellow;
+            Console.WriteLine("--------------------------------------");
+            Console.ForegroundColor = ConsoleColor.Cyan;
             while (n1 != n2)
             {
                 if (n1 > n2)
@@ -74,15 +76,12 @@ if (instructions == "GCF") {
                 else
                     n2 -= n1;
             }
-            Console.WriteLine(" G.C.D is " + n1);
+            Console.WriteLine(" Greatest common denominator is " + n1);
 }
-
-
-
 
 //USA Command
 
-else if (instructions == "usa") {
+else if (command == "usa") {
     Console.ForegroundColor = ConsoleColor.Red;
     Console.WriteLine("WE");
     System.Threading.Thread.Sleep(1000);
@@ -95,7 +94,7 @@ else if (instructions == "usa") {
 
 //Treetrain1 Command
 
-else if (instructions == "treetrain1") {
+else if (command == "treetrain1") {
     Console.WriteLine("Does treetrain1 have a skill issue?: ");
 skillIssue = Console.ReadLine();
 if (skillIssue == "yes") {
@@ -112,7 +111,7 @@ else {
 
 //LandoOnly
 
-else if (instructions == "SecretCommands") {
+else if (command == "SecretCommands") {
     string password;
     string askedCommand;
 
@@ -157,7 +156,7 @@ else if (instructions == "SecretCommands") {
 
 //DropKickANewborn Command
 
-else if (instructions == "DropKickANewborn") {
+else if (command == "DropKickANewborn") {
     Console.WriteLine("Find a baby.");
     Console.WriteLine("Record video footage of it.");
     Console.WriteLine("Edit the footage (VERY POORLY) to make it say “I completely consent and understand the use of you showing an aggressive action towards me backed up with physical force, such as drop kicking me in the face. I agree with and understand the inevitable consequences for me, and my growth after this action has taken place. You are welcome to show aggression towards me.”");
@@ -184,20 +183,54 @@ else if (instructions == "DropKickANewborn") {
 
 //Credits Command
 
-else if (instructions == "credits") {
+else if (command == "credits") {
     Console.WriteLine("https://www.kickababyscam.com");
     Console.WriteLine("Thanks to them for the 20 steps!");
 }
 
 
+//Hacker Command
+
+else if (command == "Hacker") {
+    Console.ForegroundColor = ConsoleColor.Green;
+    for (;;) {
+        int[] x = new int[10];
+Random r = new Random();
+
+while (x.Any(item => item == 1) == false)
+{
+    for (int i = 0; i < x.Length; i++)
+    {
+         x[i] = r.Next(0, 2);
+    }
+}
+
+for (int i = 0; i < x.Length; i++)
+{
+   Console.WriteLine(x[i]);
+}
+    }
+}
+
+//Throw Error Command
 
 else {
     Console.ForegroundColor = ConsoleColor.Red;
-    Console.WriteLine("Unknown command, please try again.");
+    Console.WriteLine("An error has occurred! It was most likely for one of the following reasons:");
+    Console.ForegroundColor = ConsoleColor.Magenta;
+    Console.WriteLine("You entered an unknown command (all commands are case sensitive)");
+    Console.WriteLine("We had an error on our end. This cannot be fixed without manually adjusting the code.");
+    Console.ForegroundColor = ConsoleColor.Yellow;
+        Console.WriteLine("----------------------------------------------------------------------------------");
+        Console.ForegroundColor = ConsoleColor.White;
+        Console.WriteLine("You can contact the developer on discord:\n TheTrueLando#1890");
+    
 }
 
-// Ending terminal
-//System.Threading.Thread.Sleep(2000);
+//Ending terminal
+
+Console.ForegroundColor = ConsoleColor.Yellow;
+Console.WriteLine("----------------------------------------------------------------------------------");
 Console.ForegroundColor = ConsoleColor.Green;
 Console.WriteLine(".........................................All Operations Have Been Completed.........................................");
 Console.WriteLine(".........................................You may now close this terminal.........................................");
